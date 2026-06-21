@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.redandwhitefox.pocketbeacon.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "ItemEntityMixin",
+      "BeaconBlockEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

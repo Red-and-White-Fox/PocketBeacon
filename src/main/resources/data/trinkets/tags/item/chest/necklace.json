@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "personalbeacon:beacon_trinket"
+    "pocketbeacon:beacon_trinket"
   ]
 }

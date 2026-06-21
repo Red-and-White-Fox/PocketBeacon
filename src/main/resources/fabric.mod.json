@@ -1,28 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "personalbeacon",
+	"id": "pocketbeacon",
 	"version": "${version}",
-	"name": "Personal Beacon",
-	"description": "Adds personal beacon with custom effects that is powered by vanilla beacon!",
+	"name": "Pocket Beacon",
+	"description": "Adds a pocket beacon with personalized effects!",
 	"authors": [
 		"AndrejFas"
 	],
 	"license": "CC0-1.0",
-	"icon": "assets/personalbeacon/icon.png",
+	"icon": "assets/pocketbeacon/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.redandwhitefox.personalbeacon.PersonalBeacon"
+			"com.redandwhitefox.pocketbeacon.PocketBeacon"
 		],
 		"client": [
-			"com.redandwhitefox.personalbeacon.client.PersonalBeaconClient"
+			"com.redandwhitefox.pocketbeacon.client.PocketBeaconClient"
 		],
 		"modmenu": [
-			"com.redandwhitefox.personalbeacon.client.ModMenuIntegration"
+			"com.redandwhitefox.pocketbeacon.client.ModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"personalbeacon.mixins.json"
+		"pocketbeacon.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",

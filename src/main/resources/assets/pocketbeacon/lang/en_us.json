@@ -1,0 +1,28 @@
+{
+  "key.pocketbeacon.open_gui": "Open Necklace Inventory",
+  "category.pocketbeacon": "Pocket Beacon",
+  
+  "item.pocketbeacon.beacon_medaillon": "Beacon Medaillon",
+  "item.pocketbeacon.dragon_leather": "Dragon Leather",
+  "item.pocketbeacon.beacon_trinket": "Pocket Beacon Necklace",
+  "tooltip.pocketbeacon.beacon_trinket": "Your very own beacon!",
+  
+  "text.autoconfig.pocketbeacon.title": "Pocket Beacon Configuration",
+
+  "text.autoconfig.pocketbeacon.option.vanillaBeacon": "Vanilla Beacon Settings",
+  "text.autoconfig.pocketbeacon.option.vanillaBeacon.beaconRanges": "Beacon Range per Level",
+  "text.autoconfig.pocketbeacon.option.vanillaBeacon.beaconRanges.@Tooltip": "Index 0 is Level 1, Index 7 is Level 8. Default is [20, 30, 40, 50, 65, 80, 100, 150].",
+
+  "text.autoconfig.pocketbeacon.option.trinketBeacon": "Trinket Beacon Settings",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.copperValue": "Copper Block Points",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.ironValue": "Iron Block Points",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.goldValue": "Gold Block Points",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.emeraldValue": "Emerald Block Points",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.diamondValue": "Diamond Block Points",
+
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.netheriteMultiplier": "Netherite Block Multiplier",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.netheriteMultiplier.@Tooltip": "How much each Netherite block adds to the total multiplier (e.g. 0.5).",
+
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.uniqueMultiplier": "Unique Item Multiplier",
+  "text.autoconfig.pocketbeacon.option.trinketBeacon.uniqueMultiplier.@Tooltip": "Bonus multiplier for each unique block type present in the necklace."
+}

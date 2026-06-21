@@ -6,12 +6,12 @@
     "RMR"
   ],
   "key": {
-    "L": { "item": "personalbeacon:dragon_leather" },
+    "L": { "item": "pocketbeacon:dragon_leather" },
     "R": { "item": "minecraft:redstone_block" },
-    "M": { "item": "personalbeacon:beacon_medaillon" }
+    "M": { "item": "pocketbeacon:beacon_medaillon" }
   },
   "result": {
-    "id": "personalbeacon:beacon_trinket",
+    "id": "pocketbeacon:beacon_trinket",
     "count": 1
   }
 }
