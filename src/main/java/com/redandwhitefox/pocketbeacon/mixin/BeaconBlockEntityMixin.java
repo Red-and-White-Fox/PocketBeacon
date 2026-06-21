@@ -27,7 +27,14 @@ public abstract class BeaconBlockEntityMixin {
         if (world.isClient) return;
 
         int duration = (9 + beaconLevel * 2) * 20;
-        double range = (double)beaconLevel * 10.0 + 10.0;
+        List<Double> ranges = PocketBeacon.CONFIG.vanillaBeacon.beaconRanges;
+        double range = ranges.getLast();        
+        
+        if (beaconLevel > 0 && beaconLevel <= ranges.size()) {
+        	range = ranges.get(beaconLevel - 1);
+        }
+        
+        PocketBeacon.LOGGER.info("Range: " + range);
         Box box = (new Box(pos)).expand(range).stretch(0.0, (double)world.getHeight(), 0.0);
 
         List<PlayerEntity> players = world.getNonSpectatingEntities(PlayerEntity.class, box);
@@ -46,19 +53,7 @@ public abstract class BeaconBlockEntityMixin {
 
     @ModifyConstant(method = "updateLevel", constant = @Constant(intValue = 4))
     private static int increaseMaxLevel(int original) {
-        return 8;
-    }
-
-    @ModifyVariable(method = "applyPlayerEffects", at = @At("STORE"), ordinal = 0)
-    private static double customRangeScaling(double originalRadius, World world, BlockPos pos, int level) {
-        List<Double> ranges = PocketBeacon.CONFIG.vanillaBeacon.beaconRanges;
-
-        // Check if the level exists in our config list (level 1 is index 0)
-        if (level > 0 && level <= ranges.size()) {
-            return ranges.get(level - 1);
-        }
-
-        return (level * 10.0) + 10.0; // Fallback
+        return PocketBeacon.CONFIG.vanillaBeacon.beaconRanges.size();
     }
 
     private static void applyNecklaceEffects(PlayerEntity player, ItemStack stack, int duration) {
